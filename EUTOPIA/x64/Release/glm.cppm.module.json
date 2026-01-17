@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Release\\glm.cppm.obj",
+            "outputs": [
+                "C:\\Users\\Lev\\Desktop\\Boost-1.21.90-master\\EUTOPIA\\x64\\Release\\vc143.pdb",
+                "x64\\Release\\",
+                "C:\\Users\\Lev\\Desktop\\Boost-1.21.90-master\\EUTOPIA\\x64\\Release\\glm.cppm.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "glm",
+                    "source-path": "c:\\users\\lev\\desktop\\boost-1.21.90-master\\eutopia\\libs\\glm\\glm\\glm.cppm",
+                    "is-interface": true
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

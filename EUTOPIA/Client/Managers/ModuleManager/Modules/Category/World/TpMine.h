@@ -1,0 +1,49 @@
+#pragma once
+#include <vector>
+
+#include "../../ModuleBase/Module.h"
+
+class TpMine : public Module {
+   private:
+    std::vector<BlockPos> targetListTP;
+    bool works = false;
+    bool coal = false;
+    bool dim = false;
+    bool iron = false;
+    bool gold = false;
+    bool redstone = false;
+    bool emerald = false;
+    bool ancient = false;
+    bool spawners = false;
+    bool quartz = false;
+    bool cuOre = false;
+    int cuID = 1;
+    bool antiLava = false;
+    bool antiBorder = false;
+    bool antiGravel = false;
+    int clusterSize = 5;
+    bool TP = false;
+    bool tpdone = false;
+    Vec3<float> goal;
+    float closestDistance = 0;
+    bool entity = false;
+    bool border = true;
+    bool al = true;
+    bool ab = true;
+    bool as = true;
+    int range = 50;
+    int range2 = 4;
+    int speed = 1;
+    int timerV = 480;
+    int why = 2;
+    int breakKeybind = 0x0;
+    bool midClickTP = false;
+
+   public:
+    TpMine();
+    virtual void onEnable() override;
+    virtual void onDisable() override;
+    void onMiddleClick();
+    void resetSim();
+    virtual void onNormalTick(LocalPlayer* localPlayer) override;
+};
